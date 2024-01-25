@@ -34,11 +34,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-class RandomizedSet {
+public class InsertDeleteGetRandom {
   private ArrayList<Integer> list;
   private Map<Integer, Integer> map;
 
-  public RandomizedSet() {
+  public InsertDeleteGetRandom() {
     list = new ArrayList<>();
     map = new HashMap<>();
   }
@@ -61,7 +61,7 @@ class RandomizedSet {
     int index = map.get(val);
     list.set(index, list.get(list.size() - 1));
     map.put(list.get(index), index);
-    list.remove(list.size() - 1);
+    list.removeLast();
     map.remove(val);
 
     return true;

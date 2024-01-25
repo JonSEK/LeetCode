@@ -29,7 +29,7 @@ Explanation: The only string in arr has all 26 characters.
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+public class MaximumLengthOfAConcatenatedStringWithUniqueCharacters {
   public int maxLength(List<String> arr) {
     List<Integer> dp = new ArrayList<>();
     dp.add(0);
